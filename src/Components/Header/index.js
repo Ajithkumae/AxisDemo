@@ -44,7 +44,7 @@ const Header = props => {
             size={FONTS.h3}
             style={styles.userIcon}
           />
-          <Text>Hello! {user}</Text>
+          <Text style={styles.fontColor}>Hello! {user}</Text>
         </View>
       </View>
     </ImageBackground>

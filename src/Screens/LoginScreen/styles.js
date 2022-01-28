@@ -1,9 +1,9 @@
-import {StyleSheet} from 'react-native';
-import {COLORS, FONTS, ICONSIZE, winHeight} from '../../Utils/theams';
+import { StyleSheet } from "react-native";
+import { COLORS, FONTS, ICONSIZE, winHeight } from "../../Utils/theams";
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
-} from 'react-native-responsive-screen';
+} from "react-native-responsive-screen";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -11,8 +11,9 @@ const styles = StyleSheet.create({
   },
   backgroundImg: {
     height: winHeight > 380 ? hp(50) : hp(55),
-    width: '100%',
+    width: "100%",
   },
+  inputContainer: { borderBottomWidth: 0.5, borderColor: COLORS.lightgray },
   icon: {
     height: ICONSIZE.h4,
     width: 140,
@@ -21,22 +22,22 @@ const styles = StyleSheet.create({
   title: {
     color: COLORS.white,
     fontSize: FONTS.h4_5,
-    alignSelf: 'center',
-    fontWeight: '700',
+    alignSelf: "center",
+    fontWeight: "700",
     marginTop: 30,
   },
   enableKeboardTitleView: {
     color: COLORS.white,
-    fontSize:FONTS.h2_5,
-    alignSelf: 'flex-end',
-    fontWeight: '700',
+    fontSize: FONTS.h2_5,
+    alignSelf: "flex-end",
+    fontWeight: "700",
     marginRight: 40,
   },
   loginView: {
     marginTop: hp(10),
     padding: 10,
     backgroundColor: COLORS.white,
-    marginHorizontal: '10%',
+    marginHorizontal: "10%",
     borderRadius: 10,
 
     shadowOffset: {
@@ -50,7 +51,7 @@ const styles = StyleSheet.create({
   },
   loginTitle: {
     color: COLORS.black,
-    fontWeight: '500',
+    fontWeight: "500",
   },
   inputTextView: {
     paddingVertical: hp(2.5),
@@ -60,12 +61,19 @@ const styles = StyleSheet.create({
     height: 40,
     width: 150,
     borderRadius: 30,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   btnTitle: {
     color: COLORS.white,
-    fontWeight: 'bold',
+    fontWeight: "bold",
+  },
+  fontColor: {
+    color: COLORS.black,
+  },
+  textInput: {
+    fontSize: 15,
+    color: COLORS.black,
   },
 });
 

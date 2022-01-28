@@ -61,6 +61,8 @@ const LoginScreen = () => {
           <Text style={styles.loginTitle}>Login</Text>
           <View style={styles.inputTextView}>
             <InputText
+              compSty={styles.inputContainer}
+              textInput={styles.textInput}
               placeholder={"User Id"}
               value={userName}
               onChangeText={(val) => setUserName(val)}
@@ -69,6 +71,8 @@ const LoginScreen = () => {
           </View>
           <View style={styles.inputTextView}>
             <InputText
+              compSty={styles.inputContainer}
+              textInput={styles.textInput}
               placeholder={"Password"}
               value={password}
               onChangeText={(val) => setPassword(val)}

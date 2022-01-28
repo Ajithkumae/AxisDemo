@@ -1,7 +1,7 @@
-import React from 'react';
-import {TextInput, View} from 'react-native';
-import {COLORS} from '../../Utils/theams';
-import styles from './styles';
+import React from "react";
+import { TextInput, View } from "react-native";
+import { COLORS } from "../../Utils/theams";
+import styles from "./styles";
 
 /**
  * @description Custom coponent for common InputTextField
@@ -11,17 +11,18 @@ import styles from './styles';
  * @param {Function} onChangeText - Returns text key words
  */
 
-const InputText = props => {
-  const {placeholder, value, onChangeText, otherTextInputProps} = props;
+const InputText = (props) => {
+  const { placeholder, value, onChangeText, otherTextInputProps, textInput ,compSty} =
+    props;
 
   return (
-    <View style={[styles.container]}>
+    <View style={[styles.container,compSty]}>
       <TextInput
         value={value}
-        style={[styles.textInput]}
+        style={textInput}
         placeholder={placeholder}
         placeholderTextColor={COLORS.gray}
-        onChangeText={val => onChangeText(val)}
+        onChangeText={(val) => onChangeText(val)}
         {...otherTextInputProps}
       />
     </View>
